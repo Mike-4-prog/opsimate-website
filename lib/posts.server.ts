@@ -35,10 +35,9 @@ export async function getPostById(id: string): Promise<Post | null> {
     .use(rehypeRaw)
     // 1. Sanitize the normal HTML from the markdown first
     .use(rehypeSanitize, defaultSchema)
-    // 2. THEN render the Mermaid SVGs with a dark theme
+    // 2. THEN render the Mermaid SVGs using the default theme
     .use(rehypeMermaid, { 
-      strategy: "inline-svg",
-      mermaidConfig: { theme: "dark" } 
+      strategy: "inline-svg"
     })
     .use(rehypeStringify)
     .process(parsed.body);
