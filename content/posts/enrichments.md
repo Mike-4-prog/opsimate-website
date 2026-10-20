@@ -113,7 +113,7 @@ Kafka starts sending alerts: **Unable to connect to Kafka**. The team already kn
 
 An enrichment rule can match that alert and add a note to the summary:
 
-> **Unable to connect to Kafka** — Known issue. Broker replacement scheduled for 12/11/2026.
+> **Unable to connect to Kafka** — Known issue. Broker replacement scheduled for November 12, 2026.
 
 The alert is still visible. It still fires. It is still in the pipeline. But everyone who sees it now knows it is already being tracked, and the on-call engineer does not have to ask in Slack whether this one is the known issue or something new.
 
